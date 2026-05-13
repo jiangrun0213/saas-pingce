@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { tools } from '@/data/tools'
 import { categories } from '@/data/categories'
+import { articles } from '@/data/articles'
 import ToolCard from '@/components/ToolCard'
 import CategoryGrid from '@/components/CategoryGrid'
 import AdSense from '@/components/AdSense'
@@ -28,10 +29,10 @@ export default function HomePage() {
               浏览全部工具
             </Link>
             <Link
-              href="/compare"
+              href="/articles"
               className="bg-white text-gray-700 px-6 py-3 rounded-lg font-medium border border-gray-300 hover:border-gray-400 transition-colors"
             >
-              对比工具
+              阅读文章
             </Link>
           </div>
         </div>
@@ -39,8 +40,30 @@ export default function HomePage() {
 
       <AdSense />
 
-      {/* Categories */}
+      {/* Latest Articles */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-2xl font-bold text-gray-900">最新文章</h2>
+          <Link href="/articles" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+            查看全部 →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {articles.slice(0, 2).map((article) => (
+            <Link key={article.slug} href={`/articles/${article.slug}`} className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-all">
+              <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
+                <span className="bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-medium">{article.category}</span>
+                <span>{article.date}</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">{article.title}</h3>
+              <p className="text-sm text-gray-600 line-clamp-2">{article.excerpt}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">按分类浏览</h2>
         <CategoryGrid />
       </section>

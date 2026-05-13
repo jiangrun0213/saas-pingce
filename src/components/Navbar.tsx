@@ -23,6 +23,9 @@ export default function Navbar() {
             <Link href="/categories" className="text-gray-600 hover:text-blue-600 transition-colors">
               分类浏览
             </Link>
+            <Link href="/articles" className="text-gray-600 hover:text-blue-600 transition-colors">
+              文章
+            </Link>
             <Link href="/compare" className="text-gray-600 hover:text-blue-600 transition-colors">
               工具对比
             </Link>
@@ -50,6 +53,9 @@ export default function Navbar() {
               </Link>
               <Link href="/categories" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
                 分类浏览
+              </Link>
+              <Link href="/articles" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
+                文章
               </Link>
               <Link href="/compare" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
                 工具对比
