@@ -19,7 +19,7 @@ export default function ToolCard({ tool }: ToolCardProps) {
           <div className="flex items-center gap-2 mt-2">
             <span className="text-yellow-500 text-sm">★</span>
             <span className="text-sm font-medium text-gray-700">{tool.rating}</span>
-            <span className="text-xs text-gray-400">({tool.reviewCount.toLocaleString()} 评价)</span>
+            <span className="text-xs text-gray-400">({tool.reviewCount.toLocaleString()} Bewertungen)</span>
           </div>
           <p className="text-sm text-gray-600 mt-2 line-clamp-2">{tool.description}</p>
         </div>

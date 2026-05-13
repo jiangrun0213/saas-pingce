@@ -9,29 +9,30 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">{SITE_CONFIG.name}</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              SaaS工具信息整理与评测，帮你找到适合的软件。
+              SaaS-Tools vergleichen und bewerten – Finde die passende Software für dein Unternehmen.
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">快速导航</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Navigation</h3>
             <div className="flex flex-col gap-2">
-              <Link href="/tools" className="text-gray-600 hover:text-blue-600 text-sm">全部工具</Link>
-              <Link href="/categories" className="text-gray-600 hover:text-blue-600 text-sm">分类浏览</Link>
-              <Link href="/compare" className="text-gray-600 hover:text-blue-600 text-sm">工具对比</Link>
+              <Link href="/tools" className="text-gray-600 hover:text-blue-600 text-sm">Alle Tools</Link>
+              <Link href="/categories" className="text-gray-600 hover:text-blue-600 text-sm">Kategorien</Link>
+              <Link href="/compare" className="text-gray-600 hover:text-blue-600 text-sm">Vergleichen</Link>
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">关于</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Rechtliches</h3>
             <div className="flex flex-col gap-2">
-              <Link href="/about" className="text-gray-600 hover:text-blue-600 text-sm">关于我们</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-blue-600 text-sm">联系方式</Link>
-              <Link href="/privacy" className="text-gray-600 hover:text-blue-600 text-sm">隐私政策</Link>
-              <Link href="/disclaimer" className="text-gray-600 hover:text-blue-600 text-sm">免责声明</Link>
+              <Link href="/about" className="text-gray-600 hover:text-blue-600 text-sm">Über uns</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-blue-600 text-sm">Kontakt</Link>
+              <Link href="/impressum" className="text-gray-600 hover:text-blue-600 text-sm">Impressum</Link>
+              <Link href="/privacy" className="text-gray-600 hover:text-blue-600 text-sm">Datenschutz</Link>
+              <Link href="/disclaimer" className="text-gray-600 hover:text-blue-600 text-sm">Haftungsausschluss</Link>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. All rights reserved.
+          &copy; {new Date().getFullYear()} {SITE_CONFIG.name}. Alle Rechte vorbehalten.
         </div>
       </div>
     </footer>

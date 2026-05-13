@@ -18,16 +18,16 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-6">
             <Link href="/tools" className="text-gray-600 hover:text-blue-600 transition-colors">
-              全部工具
+              Alle Tools
             </Link>
             <Link href="/categories" className="text-gray-600 hover:text-blue-600 transition-colors">
-              分类浏览
+              Kategorien
             </Link>
             <Link href="/articles" className="text-gray-600 hover:text-blue-600 transition-colors">
-              文章
+              Artikel
             </Link>
             <Link href="/compare" className="text-gray-600 hover:text-blue-600 transition-colors">
-              工具对比
+              Vergleichen
             </Link>
           </div>
 
@@ -49,16 +49,16 @@ export default function Navbar() {
           <div className="md:hidden pb-4 border-t border-gray-100 pt-4">
             <div className="flex flex-col gap-3">
               <Link href="/tools" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
-                全部工具
+                Alle Tools
               </Link>
               <Link href="/categories" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
-                分类浏览
+                Kategorien
               </Link>
               <Link href="/articles" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
-                文章
+                Artikel
               </Link>
               <Link href="/compare" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
-                工具对比
+                Vergleichen
               </Link>
             </div>
           </div>

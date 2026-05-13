@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = getToolBySlug(slug)
   if (!tool) return {}
   return {
-    title: `${tool.name} 评测 - 功能、价格、优缺点`,
-    description: `${tool.name}详细评测：${tool.description.slice(0, 100)}`,
+    title: `${tool.name} im Test – Funktionen, Preise und Bewertung`,
+    description: `${tool.name} im Test: ${tool.description.slice(0, 100)}`,
   }
 }
 
@@ -39,9 +39,9 @@ export default async function ToolDetailPage({ params }: Props) {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-        <Link href="/" className="hover:text-blue-600">首页</Link>
+        <Link href="/" className="hover:text-blue-600">Startseite</Link>
         <span>/</span>
-        <Link href="/tools" className="hover:text-blue-600">全部工具</Link>
+        <Link href="/tools" className="hover:text-blue-600">Alle Tools</Link>
         <span>/</span>
         <Link href={`/categories/${tool.categorySlug}`} className="hover:text-blue-600">{categoryName}</Link>
         <span>/</span>
@@ -56,11 +56,11 @@ export default async function ToolDetailPage({ params }: Props) {
             <h1 className="text-3xl font-bold text-gray-900">{tool.name}</h1>
             <div className="flex items-center gap-4 mt-2 flex-wrap">
               <span className="text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full">{categoryName}</span>
-              <span className="text-sm bg-gray-50 text-gray-600 px-3 py-1 rounded-full">{tool.pricing === 'free' ? '免费' : tool.pricing === 'freemium' ? '免费增值' : '付费'}</span>
+              <span className="text-sm bg-gray-50 text-gray-600 px-3 py-1 rounded-full">{tool.pricing === 'free' ? 'Kostenlos' : tool.pricing === 'freemium' ? 'Freemium' : 'Bezahlt'}</span>
               <div className="flex items-center gap-1 text-sm">
                 <span className="text-yellow-500">★</span>
                 <span className="font-medium">{tool.rating}</span>
-                <span className="text-gray-400">({tool.reviewCount.toLocaleString()} 评价)</span>
+                <span className="text-gray-400">({tool.reviewCount.toLocaleString()} Bewertungen)</span>
               </div>
             </div>
             <p className="text-gray-600 mt-4 leading-relaxed">{tool.description}</p>
@@ -69,9 +69,9 @@ export default async function ToolDetailPage({ params }: Props) {
                 href={tool.affiliateUrl ?? tool.website}
                 className="bg-blue-600 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 transition-colors inline-block"
               >
-                访问官网
+                Zur Website
               </AffiliateLink>
-              <span className="text-sm text-gray-500">价格：{tool.priceRange}</span>
+              <span className="text-sm text-gray-500">Preis: {tool.priceRange}</span>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default async function ToolDetailPage({ params }: Props) {
         {/* Features */}
         <div className="md:col-span-2 space-y-6">
           <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">核心功能</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Kernfunktionen</h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {tool.features.map((f) => (
                 <li key={f} className="flex items-center gap-2 text-gray-700">
@@ -95,7 +95,7 @@ export default async function ToolDetailPage({ params }: Props) {
           </div>
 
           <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">适用对象</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Zielgruppe</h2>
             <div className="flex flex-wrap gap-2">
               {tool.suitableFor.map((s) => (
                 <span key={s} className="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm">{s}</span>
@@ -107,7 +107,7 @@ export default async function ToolDetailPage({ params }: Props) {
         {/* Pros & Cons */}
         <div className="space-y-6">
           <div className="bg-white rounded-xl border border-green-200 p-6">
-            <h2 className="text-lg font-semibold text-green-800 mb-3">👍 优点</h2>
+            <h2 className="text-lg font-semibold text-green-800 mb-3">👍 Vorteile</h2>
             <ul className="space-y-2">
               {tool.pros.map((p) => (
                 <li key={p} className="text-sm text-gray-700 flex items-start gap-2">
@@ -119,7 +119,7 @@ export default async function ToolDetailPage({ params }: Props) {
           </div>
 
           <div className="bg-white rounded-xl border border-red-200 p-6">
-            <h2 className="text-lg font-semibold text-red-800 mb-3">👎 缺点</h2>
+            <h2 className="text-lg font-semibold text-red-800 mb-3">👎 Nachteile</h2>
             <ul className="space-y-2">
               {tool.cons.map((c) => (
                 <li key={c} className="text-sm text-gray-700 flex items-start gap-2">
@@ -135,7 +135,7 @@ export default async function ToolDetailPage({ params }: Props) {
       {/* Related Tools */}
       {relatedTools.length > 0 && (
         <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">同类工具推荐</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">Ähnliche Tools</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {relatedTools.map((rt) => (
               <Link

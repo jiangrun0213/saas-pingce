@@ -30,9 +30,9 @@ export default async function ArticlePage({ params }: Props) {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-        <Link href="/" className="hover:text-blue-600">首页</Link>
+        <Link href="/" className="hover:text-blue-600">Startseite</Link>
         <span>/</span>
-        <Link href="/articles" className="hover:text-blue-600">文章</Link>
+        <Link href="/articles" className="hover:text-blue-600">Artikel</Link>
         <span>/</span>
         <span className="text-gray-900 truncate">{article.title}</span>
       </div>
@@ -105,7 +105,7 @@ export default async function ArticlePage({ params }: Props) {
       {/* Navigation */}
       <div className="mt-12 pt-8 border-t border-gray-200">
         <Link href="/articles" className="text-blue-600 hover:text-blue-700 font-medium">
-          ← 返回文章列表
+          ← Zurück zur Artikelliste
         </Link>
       </div>
     </div>

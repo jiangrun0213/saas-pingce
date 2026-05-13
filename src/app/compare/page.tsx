@@ -8,8 +8,8 @@ import AffiliateLink from '@/components/AffiliateLink'
 type CompareTool = NonNullable<ReturnType<typeof getToolBySlug>>
 
 export default function ComparePage() {
-  const [selected1, setSelected1] = useState('feishu')
-  const [selected2, setSelected2] = useState('dingtalk')
+  const [selected1, setSelected1] = useState('notion')
+  const [selected2, setSelected2] = useState('jira')
 
   const tool1 = getToolBySlug(selected1)
   const tool2 = getToolBySlug(selected2)
@@ -20,13 +20,13 @@ export default function ComparePage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">工具对比</h1>
-      <p className="text-gray-600 mb-8">选择两款SaaS工具进行多维度对比，帮你做出更好的选型决策</p>
+      <h1 className="text-3xl font-bold text-gray-900 mb-2">Tool-Vergleich</h1>
+      <p className="text-gray-600 mb-8">Wähle zwei SaaS-Tools für einen detaillierten Vergleich – für bessere Entscheidungen.</p>
 
       {/* Selectors */}
       <div className="grid grid-cols-2 gap-4 sm:gap-8 mb-10">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">工具 A</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Tool A</label>
           <select
             value={selected1}
             onChange={(e) => setSelected1(e.target.value)}
@@ -38,7 +38,7 @@ export default function ComparePage() {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">工具 B</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Tool B</label>
           <select
             value={selected2}
             onChange={(e) => setSelected2(e.target.value)}
@@ -75,18 +75,18 @@ export default function ComparePage() {
           </div>
 
           {/* Category */}
-          <CompareRow label="分类" v1={getCategoryName(tool1.categorySlug)} v2={getCategoryName(tool2.categorySlug)} highlight />
+          <CompareRow label="Kategorie" v1={getCategoryName(tool1.categorySlug)} v2={getCategoryName(tool2.categorySlug)} highlight />
 
           {/* Pricing */}
-          <CompareRow label="定价模式" v1={tool1.pricing === 'free' ? '免费' : tool1.pricing === 'freemium' ? '免费增值' : '付费'} v2={tool2.pricing === 'free' ? '免费' : tool2.pricing === 'freemium' ? '免费增值' : '付费'} />
-          <CompareRow label="价格范围" v1={tool1.priceRange} v2={tool2.priceRange} highlight />
+          <CompareRow label="Preismodell" v1={tool1.pricing === 'free' ? 'Kostenlos' : tool1.pricing === 'freemium' ? 'Freemium' : 'Bezahlt'} v2={tool2.pricing === 'free' ? 'Kostenlos' : tool2.pricing === 'freemium' ? 'Freemium' : 'Bezahlt'} />
+          <CompareRow label="Preisspanne" v1={tool1.priceRange} v2={tool2.priceRange} highlight />
 
           {/* Description */}
-          <CompareRow label="简介" v1={tool1.description} v2={tool2.description} />
+          <CompareRow label="Beschreibung" v1={tool1.description} v2={tool2.description} />
 
           {/* Features */}
           <div className="grid grid-cols-3 border-b border-gray-100">
-            <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">核心功能</div>
+            <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">Kernfunktionen</div>
             <div className="p-4 border-l border-gray-100">
               <ul className="space-y-1">
                 {tool1.features.map((f) => (
@@ -108,14 +108,14 @@ export default function ComparePage() {
           </div>
 
           {/* Pros */}
-          <CompareRow label="👍 优点" v1={tool1.pros.join('；')} v2={tool2.pros.join('；')} highlight />
+          <CompareRow label="👍 Vorteile" v1={tool1.pros.join('；')} v2={tool2.pros.join('；')} highlight />
 
           {/* Cons */}
-          <CompareRow label="👎 缺点" v1={tool1.cons.join('；')} v2={tool2.cons.join('；')} />
+          <CompareRow label="👎 Nachteile" v1={tool1.cons.join('；')} v2={tool2.cons.join('；')} />
 
           {/* Suitable For */}
           <div className="grid grid-cols-3 border-b border-gray-100">
-            <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">适用对象</div>
+            <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">Zielgruppe</div>
             <div className="p-4 border-l border-gray-100">
               <div className="flex flex-wrap gap-1.5">
                 {tool1.suitableFor.map((s) => (
@@ -134,13 +134,13 @@ export default function ComparePage() {
 
           {/* CTA */}
           <div className="grid grid-cols-3 border-b border-gray-100">
-            <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">官网</div>
+            <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">Website</div>
             <div className="p-4 border-l border-gray-100 text-center">
               <AffiliateLink
                 href={tool1.affiliateUrl ?? tool1.website}
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors inline-block"
               >
-                访问 {tool1.name}
+                Zu {tool1.name}
               </AffiliateLink>
             </div>
             <div className="p-4 border-l border-gray-100 text-center">
@@ -148,7 +148,7 @@ export default function ComparePage() {
                 href={tool2.affiliateUrl ?? tool2.website}
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors inline-block"
               >
-                访问 {tool2.name}
+                Zu {tool2.name}
               </AffiliateLink>
             </div>
           </div>

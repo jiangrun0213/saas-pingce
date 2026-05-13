@@ -3,15 +3,15 @@ import { articles } from '@/data/articles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '文章 - SaaS产品评测与技术分析',
-  description: 'SaaS产品深度评测、技术分析、安全漏洞解读，帮你了解最新技术趋势',
+  title: 'Artikel – SaaS-Produkttests und Technologieanalyse',
+  description: 'SaaS-Produkttests, Technologieanalysen und Sicherheitsforschung – bleibe auf dem neuesten Stand',
 }
 
 export default function ArticlesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">文章</h1>
-      <p className="text-gray-600 mb-10">SaaS产品评测、技术分析、安全漏洞解读</p>
+      <h1 className="text-3xl font-bold text-gray-900 mb-2">Artikel</h1>
+      <p className="text-gray-600 mb-10">SaaS-Produkttests, Technologieanalysen und Sicherheitsforschung</p>
 
       <div className="space-y-8">
         {articles.map((article) => (

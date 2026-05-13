@@ -15,7 +15,7 @@ export default function CategoryGrid() {
           >
             <span className="text-3xl">{cat.icon}</span>
             <span className="font-medium text-gray-900 text-sm">{cat.name}</span>
-            <span className="text-xs text-gray-400">{count} 款工具</span>
+            <span className="text-xs text-gray-400">{count} Tools</span>
           </Link>
         )
       })}

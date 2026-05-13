@@ -1,18 +1,17 @@
 export const SITE_CONFIG = {
-  name: 'SaaS选型宝',
-  description: 'SaaS工具信息整理与评测，帮你找到适合的软件',
-  url: 'https://saas-xuanxing.com',
-  locale: 'zh-CN',
+  name: 'SaaS-Vergleich',
+  description: 'SaaS-Tools vergleichen und bewerten – Finde die passende Software für dein Unternehmen',
+  url: 'https://saas.jiangrun0213.org',
+  locale: 'de-DE',
 }
 
 export const ADSENSE_CONFIG = {
-  enabled: false, // 设为 true 启用 AdSense
-  clientId: 'ca-pub-xxxxxxxxxxxxxxxx', // 替换为你的 AdSense 发布商 ID
+  enabled: false,
+  clientId: 'ca-pub-xxxxxxxxxxxxxxxx',
 }
 
 export const AFFILIATE_CONFIG = {
   enabled: true,
-  // 联盟链接追踪参数
   trackParam: 'ref',
-  defaultTrackValue: 'saasxuanxing',
+  defaultTrackValue: 'saas-vergleich',
 }
