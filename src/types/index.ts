@@ -1,10 +1,38 @@
 export type Language = 'de' | 'zh'
 
+export interface RatingDimension {
+  labelDe: string
+  labelZh: string
+  score: number // 1-10
+}
+
+export interface GermanSupport {
+  interface: boolean
+  docs: boolean
+  support: boolean
+  descriptionDe: string
+  descriptionZh: string
+}
+
+export interface ToolReview {
+  reviewDe: string
+  reviewZh?: string
+  ratingDimensions: RatingDimension[]
+  germanSupport: GermanSupport
+  dsgvoStatus: 'vollständig' | 'teilweise' | 'ungeprüft' | 'nicht zutreffend'
+  dsgvoNotesDe: string
+  dsgvoNotesZh?: string
+  germanAlternatives: string[] // tool slugs
+  bestForDe: string[]
+  bestForZh: string[]
+}
+
 export interface Tool {
   id: string
   slug: string
   logo: string
   categorySlug: string
+  subCategory?: string
   pricing: 'free' | 'freemium' | 'paid'
   priceRange: string
   website: string
@@ -23,6 +51,7 @@ export interface Tool {
   consZh: string[]
   suitableForDe: string[]
   suitableForZh: string[]
+  review?: ToolReview
 }
 
 export interface Category {

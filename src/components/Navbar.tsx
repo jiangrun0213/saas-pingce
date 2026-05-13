@@ -4,9 +4,11 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useLanguage } from '@/lib/language-context'
 import { getSiteName } from '@/lib/config'
+import { chinaSubCategories } from '@/data/categories'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [chinaToolsOpen, setChinaToolsOpen] = useState(false)
   const { language, setLanguage, t } = useLanguage()
 
   return (
@@ -19,6 +21,41 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
+            {/* China-Tools Dropdown */}
+            <div className="relative group">
+              <Link
+                href="/china-tools"
+                className="text-gray-600 hover:text-blue-600 transition-colors flex items-center gap-1"
+              >
+                {t('nav.chinaTools')}
+                <svg className="w-3 h-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+              <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
+                <div className="py-2">
+                  {chinaSubCategories.map((sub) => (
+                    <Link
+                      key={sub.slug}
+                      href={`/china-tools/${sub.slug}`}
+                      className="block px-4 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+                    >
+                      <span className="mr-2">{sub.icon}</span>
+                      {language === 'zh' ? sub.nameZh : sub.nameDe}
+                    </Link>
+                  ))}
+                  <div className="border-t border-gray-100 mt-1 pt-1">
+                    <Link
+                      href="/china-tools"
+                      className="block px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+                    >
+                      {t('nav.chinaTools')} →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <Link href="/tools" className="text-gray-600 hover:text-blue-600 transition-colors">
               {t('nav.tools')}
             </Link>
@@ -66,6 +103,38 @@ export default function Navbar() {
         {menuOpen && (
           <div className="md:hidden pb-4 border-t border-gray-100 pt-4">
             <div className="flex flex-col gap-3">
+              {/* China-Tools in mobile */}
+              <button
+                onClick={() => setChinaToolsOpen(!chinaToolsOpen)}
+                className="flex items-center justify-between text-gray-600 hover:text-blue-600 px-2 py-1"
+              >
+                <span>{t('nav.chinaTools')}</span>
+                <svg className={`w-4 h-4 transition-transform ${chinaToolsOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {chinaToolsOpen && (
+                <div className="pl-4 flex flex-col gap-2">
+                  {chinaSubCategories.map((sub) => (
+                    <Link
+                      key={sub.slug}
+                      href={`/china-tools/${sub.slug}`}
+                      className="text-gray-500 hover:text-blue-600 px-2 py-1 text-sm"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      <span className="mr-2">{sub.icon}</span>
+                      {language === 'zh' ? sub.nameZh : sub.nameDe}
+                    </Link>
+                  ))}
+                  <Link
+                    href="/china-tools"
+                    className="text-blue-600 hover:text-blue-700 px-2 py-1 text-sm font-medium"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {t('nav.chinaTools')} →
+                  </Link>
+                </div>
+              )}
               <Link href="/tools" className="text-gray-600 hover:text-blue-600 px-2 py-1" onClick={() => setMenuOpen(false)}>
                 {t('nav.tools')}
               </Link>

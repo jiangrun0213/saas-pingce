@@ -8,6 +8,15 @@ import { useLanguage } from '@/lib/language-context'
 
 type CompareTool = NonNullable<ReturnType<typeof getToolBySlug>>
 
+const quickComparePresets = [
+  { label: 'DeepSeek vs ChatGPT', a: 'deepseek', b: 'chatgpt' },
+  { label: 'Feishu/Lark vs Slack', a: 'feishu-lark', b: 'slack' },
+  { label: 'WPS Office vs Notion', a: 'wps-office', b: 'notion' },
+  { label: 'Alibaba Cloud vs GitHub', a: 'alibaba-cloud', b: 'github' },
+  { label: 'Douyin vs Canva', a: 'douyin-tiktok', b: 'canva' },
+  { label: 'WeChat Mini vs HubSpot', a: 'wechat-mini-program', b: 'hubspot' },
+]
+
 export default function ComparePage() {
   const [selected1, setSelected1] = useState('notion')
   const [selected2, setSelected2] = useState('jira')
@@ -23,7 +32,24 @@ export default function ComparePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('compare.title')}</h1>
-      <p className="text-gray-600 mb-8">{t('compare.desc')}</p>
+      <p className="text-gray-600 mb-6">{t('compare.desc')}</p>
+
+      {/* Quick Compare Presets */}
+      <div className="mb-8">
+        <p className="text-sm font-medium text-gray-700 mb-3">{language === 'zh' ? '快速对比' : 'Schnellvergleich'}</p>
+        <div className="flex flex-wrap gap-2">
+          {quickComparePresets.map((preset) => (
+            <button
+              key={preset.label}
+              type="button"
+              onClick={() => { setSelected1(preset.a); setSelected2(preset.b) }}
+              className="px-3 py-1.5 text-sm bg-red-50 text-red-700 rounded-full border border-red-200 hover:bg-red-100 transition-colors"
+            >
+              {preset.label}
+            </button>
+          ))}
+        </div>
+      </div>
 
       {/* Selectors */}
       <div className="grid grid-cols-2 gap-4 sm:gap-8 mb-10">
@@ -135,6 +161,45 @@ export default function ComparePage() {
               </div>
             </div>
           </div>
+
+          {/* Review Score Comparison (when both tools have reviews) */}
+          {tool1.review && tool2.review && (
+            <div className="grid grid-cols-3 border-b border-gray-100">
+              <div className="p-4 bg-gray-50 font-medium text-sm text-gray-700">{t('review.rating')}</div>
+              <div className="p-4 border-l border-gray-100 space-y-2">
+                {tool1.review.ratingDimensions.map((dim) => {
+                  const barColor = dim.score >= 7 ? 'bg-green-500' : dim.score >= 4 ? 'bg-yellow-500' : 'bg-red-500'
+                  return (
+                    <div key={dim.labelDe} className="text-sm">
+                      <div className="flex items-center justify-between text-xs text-gray-500 mb-0.5">
+                        <span>{language === 'zh' ? dim.labelZh : dim.labelDe}</span>
+                        <span>{dim.score}/10</span>
+                      </div>
+                      <div className="w-full bg-gray-100 rounded-full h-1.5">
+                        <div className={`h-1.5 rounded-full ${barColor}`} style={{ width: `${(dim.score / 10) * 100}%` }} />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+              <div className="p-4 border-l border-gray-100 space-y-2">
+                {tool2.review.ratingDimensions.map((dim) => {
+                  const barColor = dim.score >= 7 ? 'bg-green-500' : dim.score >= 4 ? 'bg-yellow-500' : 'bg-red-500'
+                  return (
+                    <div key={dim.labelDe} className="text-sm">
+                      <div className="flex items-center justify-between text-xs text-gray-500 mb-0.5">
+                        <span>{language === 'zh' ? dim.labelZh : dim.labelDe}</span>
+                        <span>{dim.score}/10</span>
+                      </div>
+                      <div className="w-full bg-gray-100 rounded-full h-1.5">
+                        <div className={`h-1.5 rounded-full ${barColor}`} style={{ width: `${(dim.score / 10) * 100}%` }} />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )}
 
           {/* CTA */}
           <div className="grid grid-cols-3 border-b border-gray-100">

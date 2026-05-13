@@ -91,6 +91,66 @@ export const categories: Category[] = [
   },
 ]
 
+export interface ChinaSubCategory {
+  slug: string
+  nameDe: string
+  nameZh: string
+  icon: string
+  descriptionDe: string
+  descriptionZh: string
+}
+
+export const chinaSubCategories: ChinaSubCategory[] = [
+  {
+    slug: 'ai',
+    nameDe: 'KI & AI',
+    nameZh: '人工智能',
+    icon: '🤖',
+    descriptionDe: 'Chinesische KI-Plattformen und Large Language Models für Textgenerierung, Code und mehr',
+    descriptionZh: '中国AI平台和大语言模型，支持文本生成、代码编写等',
+  },
+  {
+    slug: 'collaboration',
+    nameDe: 'Kollaboration & Produktivität',
+    nameZh: '协同办公与生产力',
+    icon: '🤝',
+    descriptionDe: 'Chinesische Kollaborationsplattformen und Produktivitäts-Tools für Teams und Unternehmen',
+    descriptionZh: '中国协作平台和生产力工具，适用于团队和企业',
+  },
+  {
+    slug: 'development',
+    nameDe: 'Entwicklung & DevOps',
+    nameZh: '开发与DevOps',
+    icon: '💻',
+    descriptionDe: 'Chinesische Cloud-Plattformen, Developer-Tools und DevOps-Lösungen',
+    descriptionZh: '中国云平台、开发工具和DevOps解决方案',
+  },
+  {
+    slug: 'ecommerce',
+    nameDe: 'E-Commerce & Marketing',
+    nameZh: '电商与营销',
+    icon: '🛒',
+    descriptionDe: 'Chinesische E-Commerce- und Marketing-Plattformen für den Handel mit China',
+    descriptionZh: '中国电商和营销平台，助力对华贸易',
+  },
+  {
+    slug: 'design',
+    nameDe: 'Design & Kreativität',
+    nameZh: '设计与创意',
+    icon: '🎨',
+    descriptionDe: 'Chinesische Design- und Kreativitäts-Tools für visuelle Content-Erstellung',
+    descriptionZh: '中国设计和创意工具，用于视觉内容创作',
+  },
+  {
+    slug: 'productivity',
+    nameDe: 'Produktivitäts-Tools',
+    nameZh: '效率工具',
+    icon: '⚡',
+    descriptionDe: 'Weitere chinesische Produktivitäts-Tools für Fernzugriff, Cloud-Sync und mehr',
+    descriptionZh: '其他中国效率工具，远程访问、云同步等',
+  },
+]
+
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug)
 }

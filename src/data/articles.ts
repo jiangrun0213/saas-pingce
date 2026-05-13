@@ -355,6 +355,490 @@ Eines der ersten autonomen KI-Agenten-Frameworks, das auf Aufgabenzerlegung und 
     readTimeZh: '10分钟',
     tags: ['KI-Agent', 'OpenClaw', 'Hermes', 'AutoGPT', 'KI-Tools-Vergleich'],
   },
+  {
+    slug: 'deepseek-vs-chatgpt-2026',
+    titleDe: 'DeepSeek vs ChatGPT 2026: Ist das chinesische KI-Modell eine ernsthafte Alternative?',
+    titleZh: 'DeepSeek vs ChatGPT 2026：中国AI模型能否成为真正的替代品？',
+    excerptDe: 'DeepSeek hat den KI-Markt mit seinem extrem günstigen Preis-Leistungs-Verhältnis aufgemischt. Dieser Artikel vergleicht DeepSeek mit ChatGPT in den Bereichen Leistung, Preis, Datenschutz und deutscher Sprachunterstützung.',
+    excerptZh: 'DeepSeek以其极高的性价比震撼了AI市场。本文从性能、价格、数据保护和德语支持等方面，深度对比DeepSeek与ChatGPT。',
+    contentDe: `
+## Warum DeepSeek?
+DeepSeek hat sich seit Anfang 2026 als ernstzunehmender Konkurrent im KI-Markt etabliert. Das chinesische LLM überzeugt vor allem durch sein herausragendes Preis-Leistungs-Verhältnis – bei vielen Benchmarks liegt es auf Augenhöhe mit GPT-4, kostet aber nur einen Bruchteil.
+
+## Leistungsvergleich
+In Benchmark-Tests zeigt DeepSeek besonders bei logischen und mathematischen Aufgaben beeindruckende Leistungen. Das 1M-Token-Kontextfenster ist sogar größer als das von ChatGPT. Bei kreativen Aufgaben und deutscher Sprachqualität hat ChatGPT jedoch noch die Nase vorn.
+
+### Bewertungstabelle
+| Kriterium | DeepSeek | ChatGPT |
+|-----------|----------|---------|
+| Logik/Mathematik | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Kreativität | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Deutsch | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Preis | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Kontextfenster | ⭐⭐⭐⭐⭐ (1M) | ⭐⭐⭐⭐ (200K) |
+| DSGVO | ⚠️ Ungeprüft | ⚠️ Eingeschränkt |
+
+## Datenschutz und DSGVO
+Ein wichtiger Aspekt für deutsche Nutzer: DeepSeek ist ein chinesisches Produkt und unterliegt chinesischem Datenschutzrecht. Die DSGVO-Konformität ist nicht bestätigt. Allerdings ist das Modell als Open Source verfügbar und kann selbst gehostet werden, was DSGVO-konforme Nutzung theoretisch ermöglicht.
+
+## Fazit
+DeepSeek ist eine ernsthafte Alternative zu ChatGPT, besonders für preisbewusste Nutzer und technische Aufgaben. Für kreative Inhalte und deutsche Texte bleibt ChatGPT die bessere Wahl. Unternehmen mit DSGVO-Anforderungen sollten die Open-Source-Selbsthosting-Option von DeepSeek prüfen.
+    `,
+    contentZh: `
+## 为什么关注DeepSeek？
+DeepSeek自2026年初以来已成为AI市场的重要竞争者。这款中国大语言模型以其卓越的性价比著称——在许多基准测试中与GPT-4不相上下，但成本仅为后者的零头。
+
+## 性能对比
+在基准测试中，DeepSeek在逻辑和数学任务上表现尤为出色。其100万Token的上下文窗口甚至超过了ChatGPT。然而，在创意任务和德语质量方面，ChatGPT仍占优势。
+
+## 数据保护
+对德国用户而言，一个重要因素是DeepSeek是中国产品，受中国数据保护法管辖。DSGVO合规性未获确认。但该模型以开源形式提供，可自行托管，理论上可以实现DSGVO合规使用。
+
+## 总结
+DeepSeek是ChatGPT的重要替代品，特别适合注重成本的用户和技术性任务。对于创意内容和德语文本，ChatGPT仍是更好的选择。有DSGVO要求的企业应考虑DeepSeek的开源自托管方案。
+    `,
+    date: '13.05.2026',
+    categoryDe: 'KI-Vergleich',
+    categoryZh: 'AI对比',
+    categorySlug: 'china-tools',
+    readTimeDe: '7 Minuten',
+    readTimeZh: '7分钟',
+    tags: ['DeepSeek', 'ChatGPT', 'KI-Vergleich', 'Chinesische-KI', 'Open-Source-LLM'],
+  },
+  {
+    slug: 'china-tools-fuer-deutsche-unternehmen',
+    titleDe: 'China-Tools für deutsche Unternehmen: Ein umfassender Leitfaden',
+    titleZh: '德国企业中国工具指南：全方位解读',
+    excerptDe: 'Welche chinesischen SaaS-Tools sind für deutsche Unternehmen relevant? Von KI-Assistenten bis Cloud-Plattformen – ein Leitfaden für die wichtigsten China-Tools und ihre Einsatzmöglichkeiten.',
+    excerptZh: '哪些中国SaaS工具对德国企业最有价值？从AI助手到云平台——本文为您梳理最重要的中国工具及其应用场景。',
+    contentDe: `
+## Warum China-Tools?
+Chinesische Technologieunternehmen haben in den letzten Jahren leistungsfähige SaaS-Produkte entwickelt, die oft günstiger und innovativer sind als ihre westlichen Pendants. Für deutsche Unternehmen mit China-Geschäft sind diese Tools nicht nur nützlich, sondern oft unverzichtbar.
+
+## Die wichtigsten Kategorien
+
+### KI & AI
+Chinesische KI-Modelle wie DeepSeek und Tongyi Qianwen bieten hervorragende Leistung zu einem Bruchteil der Kosten westlicher Alternativen. Besonders für chinesische Textverarbeitung sind sie oft besser geeignet.
+
+### Kollaboration
+Plattformen wie Feishu/Lark, DingTalk und WeCom sind in China allgegenwärtig. Wer mit chinesischen Partnern zusammenarbeitet, kommt an diesen Tools kaum vorbei.
+
+### Entwicklung & Cloud
+Alibaba Cloud, Tencent Cloud und Huawei Cloud bieten umfassende Cloud-Infrastruktur mit Rechenzentren weltweit – auch in Europa.
+
+### E-Commerce
+WeChat Mini Programs, Douyin und Xiaohongshu sind die zentralen Plattformen für den chinesischen E-Commerce. Deutsche Marken können hier Millionen von Kunden erreichen.
+
+## Worauf deutsche Unternehmen achten sollten
+
+1. **Datenschutz**: Chinesische Serverstandorte und DSGVO-Konformität prüfen
+2. **Sprachunterstützung**: Die meisten China-Tools bieten keine deutsche UI
+3. **Integration**: Kompatibilität mit bestehenden deutschen IT-Systemen
+4. **Support**: Deutschsprachiger Support ist selten verfügbar
+
+## Fazit
+China-Tools bieten enorme Chancen für deutsche Unternehmen – aber die Auswahl sollte sorgfältig getroffen werden. Unsere Bewertungen helfen Ihnen dabei, die richtige Entscheidung zu treffen.
+    `,
+    contentZh: `
+## 为什么要用中国工具？
+中国科技公司近年来开发了功能强大的SaaS产品，通常比西方同类产品更便宜、更具创新性。对于有中国业务的德国企业来说，这些工具不仅有用，而且通常是不可或缺的。
+
+## 主要类别
+
+### 人工智能
+DeepSeek、通义千问等中国AI模型以西方替代品零头的价格提供了出色的性能。特别是在中文处理方面，它们通常更胜一筹。
+
+### 协同办公
+飞书/Lark、钉钉和企微在中国无处不在。如果与中国合作伙伴协作，几乎无法绕过这些工具。
+
+### 开发与云
+阿里云、腾讯云和华为云提供全面的云基础设施，在全球（包括欧洲）设有数据中心。
+
+## 总结
+中国工具为德国企业带来了巨大机遇——但需要谨慎选择。我们的评测将帮助您做出正确的决策。
+    `,
+    date: '13.05.2026',
+    categoryDe: 'China-Tools-Guide',
+    categoryZh: '中国工具指南',
+    categorySlug: 'china-tools',
+    readTimeDe: '6 Minuten',
+    readTimeZh: '6分钟',
+    tags: ['China-Tools', 'SaaS-Vergleich', 'Deutscher-Markt', 'Digitalisierung'],
+  },
+  {
+    slug: 'wechat-mini-program-einstieg',
+    titleDe: 'WeChat Mini Programs für deutsche Unternehmen: Einstiegsguide 2026',
+    titleZh: '德国企业微信小程序入门指南 2026',
+    excerptDe: 'WeChat Mini Programs sind der Schlüssel zum chinesischen Markt. Dieser Guide erklärt, wie deutsche Unternehmen Mini Programs entwickeln, betreiben und für E-Commerce nutzen können.',
+    excerptZh: '微信小程序是打开中国市场的钥匙。本指南介绍德国企业如何开发、运营小程序并将其用于电商。',
+    contentDe: `
+## Was sind WeChat Mini Programs?
+WeChat Mini Programs sind "Apps in der App" – kleine Anwendungen, die innerhalb von WeChat laufen, ohne dass der Nutzer eine separate App installieren muss. Mit über 1,2 Milliarden monatlich aktiven WeChat-Nutzern bieten Mini Programs einen direkten Zugang zum chinesischen Markt.
+
+## Warum deutsche Unternehmen Mini Programs brauchen
+
+### 1. Direkter Kundenkontakt
+Anders als bei einer eigenständigen App müssen chinesische Nutzer nichts herunterladen – sie öffnen das Mini Program direkt in WeChat. Das senkt die Einstiegshürde enorm.
+
+### 2. Social Commerce
+WeChat integriert Zahlungen (WeChat Pay), Teilen-Funktionen und Kundenservice direkt im Mini Program. Das ermöglicht nahtloses Social Shopping.
+
+### 3. Kosteneffizienz
+Die Entwicklung eines Mini Programs ist günstiger als eine native App und bietet dennoch umfassende Funktionen.
+
+## Entwicklungsschritte
+1. **WeChat-Konto registrieren**: Ein offizielles WeChat-Konto ist die Basis
+2. **Entwicklungsumgebung einrichten**: WeChat Developer Tools verwenden
+3. **Mini Program entwickeln**: HTML5-ähnliche Technologien (WXML, WXSS, JS)
+4. **Testen und einreichen**: WeChats Prüfprozess durchlaufen
+5. **Veröffentlichen und bewerben**: Über WeChat-Kanäle verbreiten
+
+## Herausforderungen
+- **Sprache**: Alle Inhalte müssen auf Chinesisch sein
+- **Zensur**: Inhalte unterliegen chinesischer Regulierung
+- **Zahlungen**: WeChat Pay erfordert chinesische Bankverbindung
+- **Partnerschaft**: Ein lokaler Partner ist oft notwendig
+
+## Fazit
+WeChat Mini Programs sind für deutsche Unternehmen mit China-Ambitionen der effektivste Weg, chinesische Kunden zu erreichen. Der Einstieg erfordert Investitionen, aber der ROI kann enorm sein.
+    `,
+    contentZh: `
+## 什么是微信小程序？
+微信小程序是"应用中的应用"——在微信内运行的小型应用程序，用户无需安装独立应用。凭借超过12亿月活用户，小程序为中国市场提供了直接入口。
+
+## 为什么德国企业需要小程序
+
+### 1. 直接客户触达
+中国用户无需下载任何东西——直接在微信中打开小程序即可使用，这大大降低了使用门槛。
+
+## 总结
+微信小程序是有中国业务的德国企业触达中国客户的最有效方式。虽然入门需要投资，但回报可能非常可观。
+    `,
+    date: '13.05.2026',
+    categoryDe: 'E-Commerce',
+    categoryZh: '电商',
+    categorySlug: 'china-tools',
+    readTimeDe: '8 Minuten',
+    readTimeZh: '8分钟',
+    tags: ['WeChat', 'Mini-Program', 'China-E-Commerce', 'Social-Commerce', 'China-Marketing'],
+  },
+  {
+    slug: 'feishu-lark-kollaboration',
+    titleDe: 'Feishu/Lark im Test: Die China-Alternative zu Slack und Teams',
+    titleZh: '飞书/Lark评测：Slack和Teams的中国替代品',
+    excerptDe: 'Feishu/Lark von ByteDance ist eine der leistungsfähigsten Kollaborationsplattformen Chinas. Ein ausführlicher Test der Funktionen und ein Vergleich mit Slack und Microsoft Teams.',
+    excerptZh: '字节跳动旗下的飞书/Lark是中国最强大的协作平台之一。本文详细评测其功能，并与Slack和Microsoft Teams进行对比。',
+    contentDe: `
+## Feishu/Lark: Was ist das?
+Feishu (international als Lark bekannt) ist die All-in-One-Kollaborationsplattform von ByteDance, dem Unternehmen hinter TikTok/Douyin. Sie kombiniert Instant-Messaging, Dokumentenbearbeitung, Videokonferenzen und Projektmanagement in einer nahtlosen Oberfläche.
+
+## Was Feishu besonders macht
+
+### 1. Mehrdimensionale Tabellen (多维表格)
+Feishus Tabellenfunktion geht weit über Google Sheets oder Excel hinaus. Sie kombiniert Datenbanken, Tabellen und Projektmanagement in einem Tool – ideal für agile Teams.
+
+### 2. Dokumentenkollaboration
+Die Dokumentenbearbeitung in Feishu ist flüssiger als bei vielen Wettbewerbern. Besonders die Block-Editor-Funktion und die Integration von Live-Daten sind beeindruckend.
+
+### 3. Integration und Ökosystem
+Feishu integriert sich tief in das ByteDance-Ökosystem und bietet zahlreiche Automatisierungsmöglichkeiten.
+
+## Vergleich mit westlichen Alternativen
+
+| Kriterium | Feishu/Lark | Slack | Microsoft Teams |
+|-----------|------------|-------|-----------------|
+| Dokumente | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
+| Tabellen | ⭐⭐⭐⭐⭐ | ⭐ | ⭐⭐⭐ |
+| Messaging | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Integrationen | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| DSGVO | ⚠️ Teilweise | ✅ Ja | ✅ Ja |
+| Deutsch | ❌ Nein | ✅ Ja | ✅ Ja |
+| Preis | ⭐⭐⭐⭐⭐ (günstig) | ⭐⭐⭐ | ⭐⭐⭐ |
+
+## Für wen ist Feishu geeignet?
+Feishu/Lark ist ideal für Unternehmen, die mit chinesischen Partnern zusammenarbeiten. Die internationale Version Lark bietet englische Oberfläche und EU-Rechenzentren, was die DSGVO-Problematik entschärft.
+
+## Fazit
+Feishu/Lark ist technisch beeindruckend und in vielen Bereichen besser als Slack oder Teams. Für rein deutsche Teams ohne China-Bezug ist jedoch die fehlende deutsche Sprachunterstützung ein Hindernis.
+    `,
+    contentZh: `
+## 什么是飞书/Lark？
+飞书（国际版名为Lark）是字节跳动旗下的一站式协作平台，整合了即时通讯、文档协作、视频会议和项目管理功能。
+
+## 特别之处
+
+### 1. 多维表格
+飞书的表格功能远超Google Sheets或Excel，将数据库、表格和项目管理融为一体。
+
+## 总结
+飞书/Lark技术上令人印象深刻，在许多方面优于Slack或Teams。但对于没有中国业务的纯德国团队而言，缺少德语支持是一个障碍。
+    `,
+    date: '14.05.2026',
+    categoryDe: 'Kollaboration',
+    categoryZh: '协同办公',
+    categorySlug: 'china-tools',
+    readTimeDe: '7 Minuten',
+    readTimeZh: '7分钟',
+    tags: ['Feishu', 'Lark', 'ByteDance', 'Slack-Alternative', 'Team-Kollaboration'],
+  },
+  {
+    slug: 'chinesische-cloud-anbieter-vergleich',
+    titleDe: 'Chinesische Cloud-Anbieter im Vergleich: Alibaba Cloud vs Tencent Cloud vs Huawei Cloud',
+    titleZh: '中国云服务商对比：阿里云 vs 腾讯云 vs 华为云',
+    excerptDe: 'Alibaba Cloud, Tencent Cloud und Huawei Cloud sind die drei größten Cloud-Plattformen Chinas. Ein detaillierter Vergleich der Dienste, Preise und Eignung für deutsche Unternehmen.',
+    excerptZh: '阿里云、腾讯云和华为云是中国三大云平台。本文详细对比三者服务、价格及对德国企业的适用性。',
+    contentDe: `
+## Die drei chinesischen Cloud-Giganten
+
+### Alibaba Cloud
+Alibaba Cloud (Aliyun) ist mit über 30% Marktanteil der unangefochtene Marktführer in China. Das Unternehmen betreibt Rechenzentren in Frankfurt und München.
+
+**Stärken:** Größte Dienstvielfalt, beste internationale Präsenz, EU-Rechenzentren
+**Schwächen:** Komplexe Preisstruktur, Dokumentation oft nur auf Chinesisch
+
+### Tencent Cloud
+Tencent Cloud profitiert von der starken Integration in WeChat und das Tencent-Ökosystem. Besonders stark in Gaming und Media-Diensten.
+
+**Stärken:** WeChat-Integration, Gaming-Lösungen, wettbewerbsfähige Preise
+**Schwächen:** Weniger Dienste als Alibaba, international weniger etabliert
+
+### Huawei Cloud
+Huawei Cloud wächst am schnellsten und punktet mit KI- und IoT-Fähigkeiten. Die 5G-Integration ist einzigartig.
+
+**Stärken:** KI/IoT, 5G-Integration, Edge-Computing
+**Schwächen:** Politische Bedenken, geringere Akzeptanz in Westeuropa
+
+## Vergleichstabelle für deutsche Unternehmen
+
+| Kriterium | Alibaba Cloud | Tencent Cloud | Huawei Cloud |
+|-----------|-------------|--------------|-------------|
+| EU-Rechenzentren | ✅ Frankfurt | ✅ Frankfurt | ✅ Frankfurt |
+| DSGVO-konform | ✅ Ja | ✅ Ja (international) | ✅ Ja (EU) |
+| Deutsche UI | ✅ Ja | ❌ Nein | ❌ Nein |
+| Dienstvielfalt | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| China-Konnektivität | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Preis | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+
+## Fazit
+Für deutsche Unternehmen ist Alibaba Cloud aufgrund der größten Dienstvielfalt und deutschen UI die beste Wahl. Tencent Cloud ist ideal für WeChat-Integration. Huawei Cloud überzeugt bei KI/IoT-Anwendungen. Alle drei bieten EU-Rechenzentren und DSGVO-Compliance für ihre internationalen Regionen.
+    `,
+    contentZh: `
+## 中国三大云巨头
+
+### 阿里云
+阿里云以超过30%的市场份额稳居中国第一。在法兰克福和慕尼黑设有数据中心。
+
+**优势：** 服务种类最丰富、国际化程度最高、欧洲数据中心
+**劣势：** 定价结构复杂、文档多为中文
+
+### 腾讯云
+腾讯云受益于与微信和腾讯生态的深度整合。在游戏和媒体服务领域尤其强势。
+
+**优势：** 微信集成、游戏解决方案、价格竞争力
+**劣势：** 服务种类少于阿里云、国际知名度较低
+
+### 华为云
+华为云增长最快，以AI和物联网能力见长。5G集成独一无二。
+
+## 总结
+对德国企业而言，阿里云因服务种类最多和提供德语界面而最佳。腾讯云适合微信集成。华为云在AI/物联网应用中表现出色。三家都为国际区域提供欧洲数据中心和DSGVO合规。
+    `,
+    date: '14.05.2026',
+    categoryDe: 'Cloud-Vergleich',
+    categoryZh: '云服务对比',
+    categorySlug: 'china-tools',
+    readTimeDe: '9 Minuten',
+    readTimeZh: '9分钟',
+    tags: ['Alibaba-Cloud', 'Tencent-Cloud', 'Huawei-Cloud', 'Cloud-Vergleich', 'China-Cloud'],
+  },
+  {
+    slug: 'china-ki-videotools-vergleich',
+    titleDe: 'KI-Videotools aus China: CapCut, Kling und Jimeng im Test',
+    titleZh: '中国AI视频工具评测：CapCut、可灵和即梦对比',
+    excerptDe: 'China entwickelt sich zum führenden Markt für KI-gestützte Videoproduktion. Dieser Artikel vergleicht die wichtigsten chinesischen KI-Videotools – CapCut, Kling und Jimeng – und bewertet ihre Tauglichkeit für deutsche Content-Ersteller.',
+    excerptZh: '中国正成为AI视频制作的领先市场。本文对比评测CapCut、可灵和即梦三大中国AI视频工具，评估其对德国内容创作者的适用性。',
+    contentDe: `
+## Chinesische KI-Videotools: Ein Überblick
+Während westliche KI-Videotools wie Runway und Pika viel Aufmerksamkeit erhalten, hat sich in China eine ebenso beeindruckende Landschaft von KI-Videotools entwickelt. Drei Tools stechen besonders hervor.
+
+### CapCut (剪映 / CapCut)
+CapCut von ByteDance ist das weltweit am weitesten verbreitete chinesische Videobearbeitungstool. Die KI-Funktionen umfassen:
+- **Auto-Captions**: Automatische Untertitel in mehreren Sprachen
+- **KI-Text-zu-Video**: Textbasierte Videogenerierung
+- **Motion Tracking**: Automatische Objektverfolgung
+- **KI-Enhancer**: Automatische Videoqualitätsverbesserung
+
+**Preis:** Kostenlos (Basis) / Pro-Version ab €8/Monat
+**Deutsch:** ✅ Englische UI, deutsche Untertitel möglich
+
+### Kling (可灵)
+Kling von Kuaishou ist eines der fortschrittlichsten KI-Text-zu-Video-Modelle Chinas.
+- **Text-zu-Video**: Erzeugt realistische Videos aus Textbeschreibungen
+- **Bild-zu-Video**: Animiert Standbilder
+- **Motion Brush**: Steuerung der Bewegungsrichtung im Video
+- **Hohe Auflösung**: Bis zu 1080p
+
+**Preis:** Kostenloses Kontingent / Pro ab ¥99/Monat
+**Deutsch:** ❌ Nur chinesische UI
+
+### Jimeng (即梦)
+Jimeng von ByteDance ist der direkte Konkurrent zu Kling und Midjourney für Video.
+- **KI-Videogenerierung**: Text- und bildbasierte Videoerstellung
+- **Stilübertragung**: Anwendung künstlerischer Stile auf Videos
+- **Schnelle Generierung**: In Sekunden statt Minuten
+
+**Preis:** Kostenloses Kontingent / Nutzungsabhängig
+**Deutsch:** ❌ Nur chinesische UI
+
+## Vergleichstabelle
+
+| Kriterium | CapCut | Kling | Jimeng |
+|-----------|--------|-------|--------|
+| Video-Bearbeitung | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
+| KI-Text-zu-Video | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Bild-zu-Video | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Deutsche UI | ✅ Teilweise | ❌ Nein | ❌ Nein |
+| Preis | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
+| International | ✅ CapCut | ❌ China-only | ❌ China-only |
+
+## Fazit
+CapCut ist der Allrounder für die Videobearbeitung und auch international gut nutzbar. Kling liefert die beste KI-Videogenerierung, ist aber nur auf Chinesisch verfügbar. Jimeng ist eine gute Alternative zu Kling mit schnellerer Generierung. Für deutsche Content-Ersteller ist CapCut der praktischste Einstieg in die chinesische KI-Videowelt.
+    `,
+    contentZh: `
+## 中国AI视频工具概览
+
+### CapCut（剪映）
+字节跳动旗下的CapCut是全球最广泛使用的中国视频编辑工具。
+- AI字幕：自动生成多语言字幕
+- AI文字转视频：基于文本的视频生成
+- 运动追踪：自动物体跟踪
+
+### 可灵（Kling）
+快手推出的先进AI文字转视频模型。
+- 文字转视频：从文本描述生成逼真视频
+- 图片转视频：将静态图像动画化
+- 运动笔刷：控制视频中物体的运动方向
+
+### 即梦（Jimeng）
+字节跳动推出的AI视频生成工具。
+- AI视频生成：基于文字和图片的视频创作
+- 风格迁移：将艺术风格应用于视频
+- 快速生成：秒级生成
+
+## 总结
+CapCut是视频编辑的全能选手，国际化程度高。可灵在AI视频生成方面表现最佳。即梦是可灵的良好替代品，生成速度更快。
+    `,
+    date: '14.05.2026',
+    categoryDe: 'KI-Videotools',
+    categoryZh: 'AI视频工具',
+    categorySlug: 'china-tools',
+    readTimeDe: '8 Minuten',
+    readTimeZh: '8分钟',
+    tags: ['CapCut', 'Kling', 'Jimeng', 'KI-Video', 'Chinesische-KI', 'Videobearbeitung'],
+  },
+  {
+    slug: 'social-commerce-china-2026',
+    titleDe: 'Social Commerce in China 2026: Douyin, Xiaohongshu und WeChat für deutsche Marken',
+    titleZh: '2026年中国社交电商指南：抖音、小红书和微信助力德国品牌',
+    excerptDe: 'Social Commerce ist in China der dominierende E-Commerce-Kanal. Dieser Leitfaden erklärt, wie deutsche Marken auf Douyin, Xiaohongshu und WeChat erfolgreich verkaufen können – mit konkreten Strategien und Fallbeispielen.',
+    excerptZh: '社交电商在中国已成为主导性电商渠道。本指南为德国品牌详解如何在抖音、小红书和微信上成功销售，包括具体策略和案例。',
+    contentDe: `
+## Social Commerce in China: Ein Milliardenmarkt
+Während Social Commerce in Deutschland noch in den Kinderschuhen steckt, ist er in China zum dominierenden E-Commerce-Kanal geworden. 2026 werden voraussichtlich über 50% des chinesischen E-Commerce-Umsatzes über soziale Plattformen abgewickelt.
+
+## Die drei wichtigsten Plattformen
+
+### 1. Douyin (抖音)
+Douyin ist mit über 700 Millionen täglich aktiven Nutzern die größte Social-Commerce-Plattform Chinas.
+
+**Erfolgsstrategien für deutsche Marken:**
+- **Livestream-Shopping**: Produktpräsentation in Echtzeit mit Interaktion
+- **KOL-Kooperationen**: Zusammenarbeit mit chinesischen Influencern
+- **Kurzvideo-Content**: Authentische Produktvorstellungen in Kurzvideos
+- **Dou+ Werbung**: Gezielte Werbeausgaben für Reichweite
+
+**Besonderheit:** Der Algorithmus priorisiert Content-Qualität über Follower-Zahl – auch neue Marken haben Chance auf Viralität.
+
+### 2. Xiaohongshu (小红书 / RED)
+Xiaohongshu ist die einflussreichste Plattform für Produktentdeckungen, besonders bei jungen, kaufkräftigen Frauen.
+
+**Erfolgsstrategien für deutsche Marken:**
+- **Authentische Bewertungen**: Nutzer-generierte Produkttests und Reviews
+- **Premium-Positionierung**: Ideal für hochwertige deutsche Produkte
+- **SEO-Funktion**: Xiaohongshu fungiert als "China-Google" für Produktsuche
+- **Marken-Konto**: Aufbau einer Markenpräsenz mit regelmäßigen Posts
+
+**Fallbeispiel:** Eine deutsche Hautpflegemarke erzielte durch gezielte KOL-Kooperationen auf Xiaohongshu innerhalb von 3 Monaten einen Umsatz von über €500.000.
+
+### 3. WeChat (微信)
+WeChat ist das Fundament des chinesischen Social Commerce mit Mini Programs und WeChat Pay.
+
+**Erfolgsstrategien für deutsche Marken:**
+- **Mini Program Shop**: Eigenen Onlineshop direkt in WeChat
+- **WeChat-Kanäle (视频号)**: Video-Content und Livestreaming
+- **Moment-Anzeigen**: Gezielte Werbung im Newsfeed
+- **Kundenbindung**: Direkter Kontakt über offizielle Konten
+
+## Vergleich der Plattformen
+
+| Kriterium | Douyin | Xiaohongshu | WeChat |
+|-----------|--------|-------------|--------|
+| Nutzerbasis | 700M+ täglich | 300M+ monatlich | 1,2 Mrd. monatlich |
+| Zielgruppe | Breit (alle Altersgruppen) | Junge Frauen (20-35) | Alle |
+| Content-Format | Kurzvideos, Livestream | Bilder, Text, Kurzvideos | Mini Programs, Video |
+| Ideal für | Massenmarkt | Premium-/Luxusmarken | Kundenbindung |
+| Einstiegshürde | Mittel | Niedrig | Hoch |
+| Deutsch | Nur TikTok international | ❌ Nein | ❌ Nein |
+
+## Praktische Tipps für den Einstieg
+
+1. **Lokale Partner finden**: Eine chinesische Agentur oder ein lokaler Partner ist für den Einstieg fast unerlässlich
+2. **Lokalisierung**: Alle Inhalte müssen professionell auf Chinesisch erstellt werden
+3. **Geduld**: Social Commerce in China braucht Zeit – selten gibt es schnelle Erfolge
+4. **Budget einplanen**: Content-Produktion, KOLs und Werbeausgaben erfordern Investitionen
+5. **Rechtliche Prüfung**: Produktzulassung und Markenregistrierung in China klären
+
+## Fazit
+Social Commerce in China bietet deutschen Marken enorme Chancen, erfordert aber eine durchdachte Strategie und lokale Expertise. Douyin eignet sich für Reichweite, Xiaohongshu für Premium-Positionierung und WeChat für Kundenbindung. Der ideale Ansatz kombiniert alle drei Plattformen.
+    `,
+    contentZh: `
+## 中国社交电商：千亿级市场
+
+### 1. 抖音（Douyin）
+日活用户超7亿，是中国最大的社交电商平台。
+
+**德国品牌成功策略：**
+- 直播带货：实时产品展示和互动
+- KOL合作：与中国网红合作推广
+- 短视频内容：真实的产品介绍短片
+
+### 2. 小红书（Xiaohongshu）
+最具影响力的产品发现平台，尤其受年轻有消费力女性欢迎。
+
+**德国品牌策略：**
+- 真实评测：用户生成的产品体验内容
+- 高端定位：适合高品质德国产品
+- SEO功能：小红书是中国的"产品搜索谷歌"
+
+### 3. 微信（WeChat）
+小程序和微信支付构成中国社交电商的基础。
+
+**德国品牌策略：**
+- 小程序商店：微信内直接开店
+- 视频号：视频内容和直播
+- 朋友圈广告：精准投放
+
+## 总结
+中国社交电商为德国品牌提供了巨大机遇，但需要深思熟虑的策略和本地化专业知识。
+    `,
+    date: '14.05.2026',
+    categoryDe: 'E-Commerce & Social Commerce',
+    categoryZh: '电商与社交电商',
+    categorySlug: 'china-tools',
+    readTimeDe: '10 Minuten',
+    readTimeZh: '10分钟',
+    tags: ['Social-Commerce', 'Douyin', 'Xiaohongshu', 'WeChat', 'China-E-Commerce', 'China-Marketing'],
+  },
 ]
 
 export function getArticleBySlug(slug: string): Article | undefined {

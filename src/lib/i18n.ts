@@ -6,6 +6,13 @@ export const translations: TranslationMap = {
   // Navbar
   'nav.tools': { de: 'Alle Tools', zh: '所有工具' },
   'nav.categories': { de: 'Kategorien', zh: '分类浏览' },
+  'nav.chinaTools': { de: 'China-Tools', zh: '中国工具' },
+  'nav.chinaSub.ai': { de: 'KI & AI', zh: '人工智能' },
+  'nav.chinaSub.collaboration': { de: 'Kollaboration & Produktivität', zh: '协同办公与生产力' },
+  'nav.chinaSub.development': { de: 'Entwicklung & DevOps', zh: '开发与DevOps' },
+  'nav.chinaSub.ecommerce': { de: 'E-Commerce & Marketing', zh: '电商与营销' },
+  'nav.chinaSub.design': { de: 'Design & Kreativität', zh: '设计与创意' },
+  'nav.chinaSub.productivity': { de: 'Produktivitäts-Tools', zh: '效率工具' },
   'nav.articles': { de: 'Artikel', zh: '文章' },
   'nav.compare': { de: 'Vergleichen', zh: '工具对比' },
   'nav.lang': { de: '中文', zh: 'DE' },
@@ -19,7 +26,7 @@ export const translations: TranslationMap = {
   'footer.privacy': { de: 'Datenschutz', zh: '隐私政策' },
   'footer.disclaimer': { de: 'Haftungsausschluss', zh: '免责声明' },
   'footer.copyright': { de: 'Alle Rechte vorbehalten', zh: '保留所有权利' },
-  'footer.tagline': { de: 'SaaS-Tools vergleichen und bewerten – Finde die passende Software für dein Unternehmen.', zh: '比较和评价SaaS工具 – 为你的企业找到合适的软件。' },
+  'footer.tagline': { de: 'Chinesische SaaS-Tools für den deutschen Markt – Professionelle Bewertungen und Vergleiche.', zh: '面向德国市场的中国SaaS工具 – 专业评测与对比。' },
 
   // Homepage
   'home.hero.title': { de: 'Finde die richtige SaaS-Lösung', zh: '找到合适的SaaS解决方案' },
@@ -79,6 +86,42 @@ export const translations: TranslationMap = {
   'articles.title': { de: 'Artikel', zh: '文章' },
   'articles.desc': { de: 'SaaS-Produkttests, Technologieanalysen und Sicherheitsforschung', zh: 'SaaS产品评测、技术分析和安全漏洞解读' },
   'articles.back': { de: '← Zurück zur Artikelliste', zh: '← 返回文章列表' },
+
+  // China-Tools
+  'chinaTools.title': { de: 'China-Tools', zh: '中国工具' },
+  'chinaTools.subtitle': { de: 'Von KI bis Kollaboration – entdecke die besten chinesischen Tools für dein Unternehmen', zh: '从AI到协同办公 – 发现最适合你企业的中国工具' },
+  'chinaTools.count': { de: '{count} Tools', zh: '{count} 款工具' },
+  'chinaTools.empty': { de: 'Keine Tools in dieser Kategorie', zh: '该分类暂无工具' },
+  'chinaTools.breadcrumb': { de: 'China-Tools', zh: '中国工具' },
+
+  // Review
+  'review.title': { de: '评测', zh: '评测' },
+  'review.rating': { de: 'Bewertungsdimensionen', zh: '评分维度' },
+  'review.dimLanguage': { de: 'Sprachunterstützung', zh: '德语支持度' },
+  'review.dimFeatures': { de: 'Funktionsumfang', zh: '功能完整度' },
+  'review.dimPrivacy': { de: 'Datenschutz (DSGVO)', zh: '数据合规' },
+  'review.dimValue': { de: 'Preis-Leistung', zh: '性价比' },
+  'review.interface': { de: 'Oberfläche', zh: '界面' },
+  'review.docs': { de: 'Dokumentation', zh: '文档' },
+  'review.support': { de: 'Kundenservice', zh: '客服' },
+  'review.dsgvoStatus': { de: 'DSGVO-Status', zh: 'DSGVO状态' },
+  'review.dsgvoFull': { de: 'Vollständig konform', zh: '完全合规' },
+  'review.dsgvoPartial': { de: 'Teilweise konform', zh: '部分合规' },
+  'review.dsgvoUnchecked': { de: 'Nicht geprüft', zh: '未经检验' },
+  'review.dsgvoNa': { de: 'Nicht zutreffend', zh: '不适用' },
+  'review.germanAlternatives': { de: 'Deutsche Alternativen', zh: '德国替代品' },
+  'review.bestFor': { de: 'Am besten geeignet für', zh: '最适用于' },
+  'review.fullReview': { de: 'Ausführliche Bewertung', zh: '详细评测' },
+
+  // Homepage (new)
+  'home.chinaHero.title': { de: 'China-Tools für dein Unternehmen', zh: '为中国工具赋能你的企业' },
+  'home.chinaHero.subtitle': { de: 'Von KI-Assistenten bis Cloud-Plattformen – professionelle Bewertungen chinesischer SaaS-Lösungen speziell für den deutschen Markt', zh: '从AI助手到云平台 – 专为德国市场提供的中国SaaS解决方案专业评测' },
+  'home.chinaHero.cta': { de: 'China-Tools entdecken', zh: '发现中国工具' },
+  'home.chinaHero.ctaSecondary': { de: 'Alle Tools durchsuchen', zh: '浏览所有工具' },
+  'home.dimensions.title': { de: 'So bewerten wir', zh: '我们的评测维度' },
+  'home.dimensions.subtitle': { de: 'Jedes Tool wird nach 4 Kriterien bewertet – speziell für den deutschen Markt', zh: '每款工具从4个维度评分 – 专为德国市场定制' },
+  'home.featuredChina': { de: 'Ausgewählte China-Tools', zh: '精选中国工具' },
+  'home.chinaSubtitle': { de: 'Durchstöbere {categories} Kategorien chinesischer Tools', zh: '浏览 {categories} 个中国工具分类' },
 
   // Static page titles
   'page.about': { de: 'Über uns', zh: '关于我们' },

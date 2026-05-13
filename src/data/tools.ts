@@ -1,4 +1,5 @@
-import { Tool, Language } from '@/types'
+import { Tool, Language, ToolReview } from '@/types'
+import { chinaTools } from './china-tools'
 
 export const tools: Tool[] = [
   {
@@ -457,122 +458,7 @@ export const tools: Tool[] = [
     suitableForDe: ['Entwickler', 'Content-Ersteller', 'Forschende', 'Alle mit komplexen Analyseanforderungen'],
     suitableForZh: ['开发者', '内容创作者', '研究人员', '有复杂分析需求的用户'],
   },
-  // Chinese tools for the German market (China-Tools)
-  {
-    id: '20',
-    slug: 'feishu-lark',
-    logo: '📘',
-    categorySlug: 'china-tools',
-    pricing: 'freemium',
-    priceRange: 'Kostenlos - €12/Monat',
-    website: 'https://www.feishu.cn',
-    rating: 4.5,
-    reviewCount: 12800,
-    nameDe: 'Feishu / Lark',
-    nameZh: '飞书 / Lark',
-    descriptionDe: 'All-in-One-Kollaborationsplattform von ByteDance. Integriert Instant-Messaging, Dokumentenbearbeitung, Kalender, Videokonferenzen und Projektmanagement in einer leistungsstarken Lösung. Die internationale Version heißt Lark.',
-    descriptionZh: '字节跳动旗下的一站式企业协作平台，整合即时通讯、文档协作、日历、视频会议和项目管理等功能。国际版名为Lark。',
-    featuresDe: ['Instant-Messaging', 'Online-Dokumente', 'Mehrdimensionale Tabellen', 'Videokonferenzen', 'Kalenderverwaltung', 'OKR-Management', 'Genehmigungs-Workflows'],
-    featuresZh: ['即时通讯', '在线文档', '多维表格', '视频会议', '日历管理', 'OKR管理', '审批流程'],
-    prosDe: ['Hervorragende Dokumentenkollaboration', 'leistungsstarke Tabellenfunktionen', 'breite Integrationsmöglichkeiten', 'großzügige kostenlose Version'],
-    prosZh: ['文档协作体验优秀', '多维表格功能强大', '集成能力强', '免费版功能丰富'],
-    consDe: ['Höhere Lernkurve für fortgeschrittene Funktionen', 'Premium-Funktionen kostenpflichtig', 'Weniger Drittanbieter-Integrationen als Slack'],
-    consZh: ['高级功能学习门槛高', '部分高级功能需付费', '第三方集成不如Slack丰富'],
-    suitableForDe: ['Unternehmen mit China-Geschäft', 'Internationale Teams mit China-Kontakten', 'Startups', 'Technologieunternehmen'],
-    suitableForZh: ['有中国业务的企业', '需要与中国团队协作的国际团队', '创业公司', '科技企业'],
-  },
-  {
-    id: '21',
-    slug: 'dingtalk',
-    logo: '🔵',
-    categorySlug: 'china-tools',
-    pricing: 'freemium',
-    priceRange: 'Kostenlos - €25/Monat',
-    website: 'https://www.dingtalk.com',
-    rating: 4.2,
-    reviewCount: 25600,
-    nameDe: 'DingTalk',
-    nameZh: '钉钉',
-    descriptionDe: 'Enterprise-Kommunikations- und Kollaborationsplattform von Alibaba. Bietet Instant-Messaging, OA-Genehmigungen, Zeiterfassung, Videokonferenzen und mehr. Marktführer unter chinesischen KMU.',
-    descriptionZh: '阿里巴巴旗下的企业级协同办公平台，覆盖即时通讯、OA审批、考勤管理、视频会议等功能，在中国中小企业市场占有率领先。',
-    featuresDe: ['Instant-Messaging', 'OA-Genehmigungen', 'Zeiterfassung', 'Videokonferenzen', 'Personalverwaltung', 'Dokumentenbearbeitung'],
-    featuresZh: ['即时通讯', 'OA审批', '考勤管理', '视频会议', '智能人事', '钉钉文档'],
-    prosDe: ['Hohe Marktdurchdringung in China', 'umfassende OA-Workflows', 'reichhaltiges Hardware-Ökosystem', 'Alibaba-Ökosystem-Integration'],
-    prosZh: ['中国中小企业覆盖率高', 'OA审批流程完善', '硬件生态丰富', '阿里生态整合'],
-    consDe: ['Komplexe Benutzeroberfläche', 'eingeschränkte Free-Version', 'viele Benachrichtigungen können ablenken'],
-    consZh: ['界面相对复杂', '免费版功能限制较多', '消息过多容易干扰'],
-    suitableForDe: ['Unternehmen mit China-Lieferanten', 'Fertigungspartner in China', 'B2B-Unternehmen mit China-Fokus'],
-    suitableForZh: ['有中国供应商的企业', '在华制造合作伙伴', '面向中国的B2B企业'],
-  },
-  {
-    id: '22',
-    slug: 'wecom',
-    logo: '💚',
-    categorySlug: 'china-tools',
-    pricing: 'freemium',
-    priceRange: 'Kostenlos - €25/Monat',
-    website: 'https://work.weixin.qq.com',
-    rating: 4.3,
-    reviewCount: 18900,
-    nameDe: 'WeCom (企业微信)',
-    nameZh: '企业微信',
-    descriptionDe: 'Enterprise-Kommunikations-Tool von Tencent, mit tiefgehender Integration in das WeChat-Ökosystem. Ermöglicht die direkte Kommunikation zwischen Unternehmen und WeChat-Kunden – unverzichtbar für Geschäfte mit China.',
-    descriptionZh: '腾讯推出的企业通讯工具，与微信生态深度打通，支持企业员工与微信客户直接沟通，是对华业务不可或缺的工具。',
-    featuresDe: ['Unternehmenskommunikation', 'Kundenkontakt über WeChat', 'Dokumentenkollaboration', 'Videokonferenzen', 'Kalender', 'Genehmigungen'],
-    featuresZh: ['企业通讯', '客户联系(微信互通)', '文档协作', '会议', '日程', '审批'],
-    prosDe: ['Nahtlose WeChat-Integration', 'großzügige kostenlose Funktionen', 'Tencent-Ökosystem', 'starke Kundenbindungsfunktionen'],
-    prosZh: ['与微信互通', '免费功能充足', '腾讯生态整合', '客户运营能力强'],
-    consDe: ['Weniger Tiefe als spezialisierte Tools (Feishu)', 'starker B2C-Fokus', 'schwächere Dokumentenkollaboration'],
-    consZh: ['功能深度不如飞书', '偏重B2C属性', '文档协作较弱'],
-    suitableForDe: ['Unternehmen mit China-Kunden', 'Einzelhandel mit China-Bezug', 'Dienstleister für chinesische Kunden'],
-    suitableForZh: ['有中国客户的企业', '面向中国的零售业', '服务中国客户的企业'],
-  },
-  {
-    id: '23',
-    slug: 'tongyi-qianwen',
-    logo: '🌙',
-    categorySlug: 'china-tools',
-    pricing: 'freemium',
-    priceRange: 'Kostenlos - Nutzungsabhängig',
-    website: 'https://tongyi.aliyun.com',
-    rating: 4.4,
-    reviewCount: 15000,
-    nameDe: 'Tongyi Qianwen',
-    nameZh: '通义千问',
-    descriptionDe: 'Großes Sprachmodell (LLM) von Alibaba Cloud für KI-Assistenz. Bietet Textgenerierung, Code-Erstellung und Dokumentenanalyse mit herausragenden Chinesisch-Kenntnissen. Eine wichtige Alternative im asiatischen KI-Markt.',
-    descriptionZh: '阿里云推出的大语言模型AI助手，具备强大的中文理解和生成能力，支持文本生成、代码编写、文档分析等功能。亚洲AI市场的重要选择。',
-    featuresDe: ['Dialog und Fragen', 'Dokumentenanalyse', 'Code-Hilfe', 'Langtextverarbeitung', 'Internetsuche', 'Plugins', 'Unternehmensanpassung'],
-    featuresZh: ['对话问答', '文档分析', '代码帮助', '长文本处理', '联网搜索', '插件', '企业定制'],
-    prosDe: ['Hervorragende Chinesisch-Kenntnisse', 'großzügige kostenlose Nutzung', 'Alibaba-Cloud-Integration', 'starke Langtextverarbeitung'],
-    prosZh: ['中文理解能力强', '免费额度充足', '阿里云生态集成', '长文本处理优秀'],
-    consDe: ['Weniger leistungsfähig als GPT im Englischen', 'eingeschränkte internationale Präsenz', 'schwächere Kreativität'],
-    consZh: ['英文能力不如GPT', '国际场景有限', '创意写作偏弱'],
-    suitableForDe: ['Unternehmen mit China-Fokus', 'Forschende im Bereich Chinesisch', 'Übersetzer für Chinesisch'],
-    suitableForZh: ['面向中国市场的企业', '中文研究人员', '中文翻译'],
-  },
-  {
-    id: '24',
-    slug: 'yuque',
-    logo: '📝',
-    categorySlug: 'china-tools',
-    pricing: 'freemium',
-    priceRange: 'Kostenlos - €7/Monat',
-    website: 'https://www.yuque.com',
-    rating: 4.4,
-    reviewCount: 8600,
-    nameDe: 'Yuque (语雀)',
-    nameZh: '语雀',
-    descriptionDe: 'Cloud-basiertes Wissensmanagement-Tool von Ant Group. Spezialisiert auf strukturiertes technisches Schreiben und Wissensdatenbanken. Führend in chinesischen Technologieteams.',
-    descriptionZh: '蚂蚁集团旗下的云端知识库平台，专注于结构化文档写作和知识管理，是国内技术团队领先的文档协作工具。',
-    featuresDe: ['Dokumentenbearbeitung', 'Wissensdatenbank', 'Whiteboard', 'Notizen', 'Tabellen', 'Präsentationen', 'API-Dokumentation'],
-    featuresZh: ['文档编辑', '知识库', '画板/白板', '小记', '表格', '演示', 'API文档'],
-    prosDe: ['Hervorragendes strukturiertes Schreiben', 'ideal für Technologieteams', 'großzügige kostenlose Version', 'schnelle Bereitstellung'],
-    prosZh: ['结构化文档优秀', '技术团队适用', '免费版功能充足', '速度快'],
-    consDe: ['Weniger Projektmanagement-Funktionen', 'mobile App-Abdeckung begrenzt', 'kleinere Community als Notion'],
-    consZh: ['项目管理功能弱', '移动端体验一般', '社区不如Notion活跃'],
-    suitableForDe: ['Technologieteams mit China-Partnern', 'Wissensmanagement-Teams', 'Produktmanager'],
-    suitableForZh: ['有中国合作伙伴的技术团队', '知识管理团队', '产品经理'],
-  },
+  ...chinaTools,
 ]
 
 export function getToolBySlug(slug: string): Tool | undefined {
@@ -587,6 +473,27 @@ export function getFeaturedTools(): Tool[] {
   return tools.filter((t) => t.rating >= 4.5)
 }
 
+function localizeReview(review: ToolReview, lang: Language) {
+  const isZh = lang === 'zh'
+  return {
+    review: isZh && review.reviewZh ? review.reviewZh : review.reviewDe,
+    ratingDimensions: review.ratingDimensions.map(d => ({
+      label: isZh ? d.labelZh : d.labelDe,
+      score: d.score,
+    })),
+    germanSupport: {
+      interface: review.germanSupport.interface,
+      docs: review.germanSupport.docs,
+      support: review.germanSupport.support,
+      description: isZh ? review.germanSupport.descriptionZh : review.germanSupport.descriptionDe,
+    },
+    dsgvoStatus: review.dsgvoStatus,
+    dsgvoNotes: isZh && review.dsgvoNotesZh ? review.dsgvoNotesZh : review.dsgvoNotesDe,
+    germanAlternatives: review.germanAlternatives,
+    bestFor: isZh ? review.bestForZh : review.bestForDe,
+  }
+}
+
 export function localizeTool(tool: Tool, lang: Language) {
   const isZh = lang === 'zh'
   return {
@@ -594,6 +501,7 @@ export function localizeTool(tool: Tool, lang: Language) {
     slug: tool.slug,
     logo: tool.logo,
     categorySlug: tool.categorySlug,
+    subCategory: tool.subCategory,
     pricing: tool.pricing,
     priceRange: tool.priceRange,
     website: tool.website,
@@ -606,5 +514,6 @@ export function localizeTool(tool: Tool, lang: Language) {
     pros: isZh ? tool.prosZh : tool.prosDe,
     cons: isZh ? tool.consZh : tool.consDe,
     suitableFor: isZh ? tool.suitableForZh : tool.suitableForDe,
+    review: tool.review ? localizeReview(tool.review, lang) : undefined,
   }
 }

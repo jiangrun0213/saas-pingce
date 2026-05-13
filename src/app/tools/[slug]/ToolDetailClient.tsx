@@ -119,6 +119,124 @@ export default function ToolDetailClient({ tool }: Props) {
         </div>
       </div>
 
+      {/* Review Section (for China-Tools) */}
+      {localized.review && (
+        <div className="space-y-6 mb-8">
+          {/* Rating Dimensions */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">{t('review.title')}</h2>
+            <div className="space-y-4">
+              {localized.review.ratingDimensions.map((dim) => {
+                const pct = (dim.score / 10) * 100
+                const barColor = dim.score >= 7 ? 'bg-green-500' : dim.score >= 4 ? 'bg-yellow-500' : 'bg-red-500'
+                return (
+                  <div key={dim.label}>
+                    <div className="flex items-center justify-between text-sm mb-1">
+                      <span className="font-medium text-gray-700">{dim.label}</span>
+                      <span className="text-gray-500">{dim.score}/10</span>
+                    </div>
+                    <div className="w-full bg-gray-100 rounded-full h-2.5">
+                      <div className={`h-2.5 rounded-full ${barColor}`} style={{ width: `${pct}%` }} />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
+          {/* German Support */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">{t('review.interface')}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-lg">{localized.review.germanSupport.interface ? '✅' : '❌'}</span>
+                <span className="text-gray-700">{t('review.interface')}</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-lg">{localized.review.germanSupport.docs ? '✅' : '❌'}</span>
+                <span className="text-gray-700">{t('review.docs')}</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-lg">{localized.review.germanSupport.support ? '✅' : '❌'}</span>
+                <span className="text-gray-700">{t('review.support')}</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600">{localized.review.germanSupport.description}</p>
+          </div>
+
+          {/* DSGVO Status */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('review.dsgvoStatus')}</h2>
+            <div className="flex items-center gap-3 mb-3">
+              {(() => {
+                const statusColors: Record<string, string> = {
+                  'vollständig': 'bg-green-100 text-green-800 border-green-300',
+                  'teilweise': 'bg-yellow-100 text-yellow-800 border-yellow-300',
+                  'ungeprüft': 'bg-gray-100 text-gray-800 border-gray-300',
+                  'nicht zutreffend': 'bg-blue-100 text-blue-800 border-blue-300',
+                }
+                const statusKey = tool.review!.dsgvoStatus
+                const colorClass = statusColors[statusKey] || 'bg-gray-100 text-gray-800'
+                const labelKey = `review.dsgvo${statusKey === 'vollständig' ? 'Full' : statusKey === 'teilweise' ? 'Partial' : statusKey === 'ungeprüft' ? 'Unchecked' : 'Na'}`
+                return (
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium border ${colorClass}`}>
+                    {t(labelKey)}
+                  </span>
+                )
+              })()}
+            </div>
+            <p className="text-sm text-gray-600">{localized.review.dsgvoNotes}</p>
+          </div>
+
+          {/* Full Review Text */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">{t('review.fullReview')}</h2>
+            <div className="prose prose-sm max-w-none text-gray-700 leading-relaxed whitespace-pre-line">
+              {localized.review.review}
+            </div>
+          </div>
+
+          {/* German Alternatives */}
+          {localized.review.germanAlternatives.length > 0 && (
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">{t('review.germanAlternatives')}</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {localized.review.germanAlternatives.map((altSlug) => {
+                  const altTool = tools.find((t) => t.slug === altSlug)
+                  if (!altTool) return null
+                  const altLocalized = localizeTool(altTool, language)
+                  return (
+                    <Link
+                      key={altSlug}
+                      href={`/tools/${altSlug}`}
+                      className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors"
+                    >
+                      <span className="text-2xl">{altTool.logo}</span>
+                      <div>
+                        <div className="font-medium text-gray-900 text-sm">{altLocalized.name}</div>
+                        <div className="text-xs text-gray-500">★ {altTool.rating}</div>
+                      </div>
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Best For */}
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">{t('review.bestFor')}</h2>
+            <div className="flex flex-wrap gap-2">
+              {localized.review.bestFor.map((item) => (
+                <span key={item} className="bg-green-50 text-green-700 px-3 py-1.5 rounded-full text-sm font-medium">
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Related Tools */}
       {relatedTools.length > 0 && (
         <div className="bg-white rounded-xl border border-gray-200 p-6">
