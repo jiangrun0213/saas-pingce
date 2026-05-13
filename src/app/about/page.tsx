@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: '关于我们',
-  description: 'SaaS选型宝是国内领先的SaaS产品选型对比平台，致力于帮助企业和个人找到最适合的SaaS工具',
+  description: 'SaaS选型宝的关于页面，介绍网站的定位、数据来源和编辑方针',
 }
 
 export default function AboutPage() {
@@ -14,8 +14,7 @@ export default function AboutPage() {
         <section>
           <h2 className="text-xl font-semibold text-gray-900 mb-3">关于 SaaS选型宝</h2>
           <p>
-            SaaS选型宝是国内领先的SaaS产品选型对比平台。我们致力于解决企业在数字化选型过程中的信息不对称问题，
-            通过客观、全面、透明的产品对比和评测，帮助企业做出更明智的软件采购决策。
+            SaaS选型宝是一个SaaS产品信息整理与评测网站，致力于帮助企业和个人了解不同软件工具的特点与差异。
           </p>
           <p className="mt-2">
             平台上收录了覆盖项目管理、协同办公、AI人工智能、CRM、开发工具、数据分析、

@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">{SITE_CONFIG.name}</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
-              国内领先的SaaS产品选型对比平台，帮助企业找到最适合的软件工具。
+              SaaS工具信息整理与评测，帮你找到适合的软件。
             </p>
           </div>
           <div>

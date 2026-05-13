@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   name: 'SaaS选型宝',
-  description: '国内领先的SaaS产品选型对比平台，帮你找到最适合企业需求的软件工具',
+  description: 'SaaS工具信息整理与评测，帮你找到适合的软件',
   url: 'https://saas-xuanxing.com',
   locale: 'zh-CN',
 }
