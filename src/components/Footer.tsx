@@ -23,8 +23,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">关于</h3>
             <div className="flex flex-col gap-2">
+              <Link href="/about" className="text-gray-600 hover:text-blue-600 text-sm">关于我们</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-blue-600 text-sm">联系方式</Link>
               <Link href="/privacy" className="text-gray-600 hover:text-blue-600 text-sm">隐私政策</Link>
-              <span className="text-gray-400 text-sm">联系：contact@saas-xuanxing.com</span>
+              <Link href="/disclaimer" className="text-gray-600 hover:text-blue-600 text-sm">免责声明</Link>
             </div>
           </div>
         </div>
