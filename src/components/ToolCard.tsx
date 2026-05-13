@@ -1,11 +1,18 @@
+'use client'
+
 import Link from 'next/link'
 import { Tool } from '@/types'
+import { useLanguage } from '@/lib/language-context'
+import { localizeTool } from '@/data/tools'
 
 interface ToolCardProps {
   tool: Tool
 }
 
 export default function ToolCard({ tool }: ToolCardProps) {
+  const { language, t } = useLanguage()
+  const localized = localizeTool(tool, language)
+
   return (
     <Link
       href={`/tools/${tool.slug}`}
@@ -14,14 +21,14 @@ export default function ToolCard({ tool }: ToolCardProps) {
       <div className="flex items-start gap-4">
         <span className="text-3xl flex-shrink-0">{tool.logo}</span>
         <div className="min-w-0 flex-1">
-          <h3 className="font-semibold text-gray-900 text-lg truncate">{tool.name}</h3>
+          <h3 className="font-semibold text-gray-900 text-lg truncate">{localized.name}</h3>
           <p className="text-sm text-gray-500 mt-0.5">{tool.priceRange}</p>
           <div className="flex items-center gap-2 mt-2">
             <span className="text-yellow-500 text-sm">★</span>
             <span className="text-sm font-medium text-gray-700">{tool.rating}</span>
-            <span className="text-xs text-gray-400">({tool.reviewCount.toLocaleString()} Bewertungen)</span>
+            <span className="text-xs text-gray-400">{t('toolcard.reviews', { count: tool.reviewCount.toLocaleString() })}</span>
           </div>
-          <p className="text-sm text-gray-600 mt-2 line-clamp-2">{tool.description}</p>
+          <p className="text-sm text-gray-600 mt-2 line-clamp-2">{localized.description}</p>
         </div>
       </div>
     </Link>

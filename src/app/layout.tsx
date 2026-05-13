@@ -3,14 +3,15 @@ import Script from 'next/script'
 import { SITE_CONFIG, ADSENSE_CONFIG } from '@/lib/config'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { LanguageProvider } from '@/lib/language-context'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_CONFIG.name} - SaaS产品选型对比平台`,
-    template: `%s | ${SITE_CONFIG.name}`,
+    default: `${SITE_CONFIG.nameDe} - SaaS-Vergleich und Bewertung`,
+    template: `%s | ${SITE_CONFIG.nameDe}`,
   },
-  description: SITE_CONFIG.description,
+  description: SITE_CONFIG.descriptionDe,
 }
 
 export default function RootLayout({
@@ -19,11 +20,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang={SITE_CONFIG.locale}>
+    <html lang="de-DE" suppressHydrationWarning>
       <body className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </LanguageProvider>
 
         {ADSENSE_CONFIG.enabled && (
           <Script
